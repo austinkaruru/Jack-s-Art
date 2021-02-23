@@ -4,102 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack's Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+   
 </head>
 <body>
     <header>
-        <div class="thelogo">
-            <img src="images/new.jpg" width="50" length="50">
-        </div>
-        <button class="nav-btn" aria-label="nav-button">
-            <span class="btn"></span>
-
-        </button>
-
-        <nav class="thenav">
-            <ul class="thenav_ul">
-                <li class="thenav_item"> <a href="#home"> Home</a></li>
-                <li class="thenav_item"> <a href="#skills"> Creative Styles</a></li>
-                <li class="thenav_item"> <a href="#about"> About Me</a></li>
-                <li class="thenav_item"> <a href="#projects"> Art Projects</a></li>
+        <div class="header">
+        <div class="logo">
+            <img src="images/overwatch.png" width="50" height="50" alt="jack's logo">
+            </div>
+            <!-- <button class="nav-btn" aria-label="nav-button"> -->
+                <span class="btn"></span>
+            </button>
+        < <nav class="mynav"> 
+            <ul class="mynav_ls">
+                <li class="mynav_item"> <a href="#home" class="mynav_link">Home</a></li>
+                <li class="mynav_item"> <a href="#skills" class="mynav_link">Creative Styles</a></li>
+                <li class="mynav_item"> <a href="#about" class="mynav_link">About Me</a></li>
+                <li class="mynav_item"> <a href="#projects" class="mynav_link">Art Projects</a></li>
             </ul>
         </nav>
+    </div>
     </header>
-
 
     <!--Top Introduction Section-->
     <section class="topintro" id="home">
-        <h1 class="secintro">
-            Hey There. I am Jack Sparrow.
+           <div class="row">
+               <div class="column">
+        <h1 class="secintro" >
+            Hey There. I am<br> <strong>Jack Sparrow<br></strong>
             An Art Student.
         </h1>
-        <p class="secpar_one">
-            Here is my Art Portfolio.
-        </p>
-        <img src="images/new2.jpg" width="220" alt="top_image" class="firstimg">
+        </div>
+       <div class="column">
+        <img src="images/bap.jpeg" width="220" height="220" alt="jack display image" class="first_img">
+        </div>
+        </div>
+        <p id="box"> Check Out my Art Portfolio</p>
     </section>
 
     <!--My Creative Styles-->
-
-    <section class="topcreative" id="skills">
-        <h2 class="seccreative"> I Draw...</h2>
-        <div class="skills">
+    
+    <section class="topcreative" id="skills" >
+        
+        <h1 class="seccreative"> I Draw...</h1>
+       
             <div class="skills">
+               
                 <h3>Decorative Art</h3>
-                <P>I create unique artistic pieces you can use to 
+                <P>I create unique artistic pieces you can use to
                     decorate your personal or professional space.
                     My decorative places focus on vintage and target
                 </p>
+                </div>
 
-            </div>
+         
 
             <div class="skills">
+               
                 <h3>Fine art</h3>
-                <p>Using paintigs, i create fine art that focuses on presenting 
+                <p>Using paintigs, i create fine art that focuses on presenting<br> 
                    both the beauty of the world as we see it,
                    and beauty as conceived by the mind</p>
             </div>
-
+        </div>
+            
             <div class="skills">
+                
                 <h3>Visual art</h3>
                 <p>Capitalizing on the power of the eye and mind,I draw paintings
                     that bring you closer to nature, events, imaginations, and emotions,
                     and the world.</p>
             </div>
-
-        </div>
-        <a href="#projects" class="button">My Artwork</a>
+           
+           
+        <a href="#arts" class="button" style="text-align: center;">My Art</a>
+    </div>
     </section>
+
 
     <!--The artist bio-->
     <section class="bio" id="about">
-        <h2 class=sectitle>A little about me</h2>
+        <h2 class=sectitle>About Me</h2>
         <div class="bio_body">
             <p>I am an Art student at VisualDo Institute.I have created paintings
                 for both personal and commercial decorations. Below, you will find
                 some of my best works, and projects that I really enjoyed working on.
             </p>
         </div>
-        <img src="images/new3.jpg" alt="full artist image" >
+        <img src="images/bap.jpeg" alt="full artist image" width="300" height="300" class="bio_img">
 
     </section>
 
     <!--My art porjects-->
     <section class="myprojects" id="projects">
-        <h2>Some art projects i've completed</h2>
+        <h2>My complete Art work</h2>
         <p>Check out my work</p>
 
         <div class="mywork">
 
             <!--Project1-->
-            <a href="#" class="work-piece">
+            <a href="portfoliome" class="work-piece">
                 <img src="images/img1.jpg" alt="my first project" class="workplace_img">
             </a>
 
+             <!--Project2-->
+             <a href="portfoliome" class="work-piece">
+                <img src="images/img1.jpg" alt="my second artwork" class="workplace_img">
+            </a>
+             <!--Project3-->
+             <a href="portfoliome" class="work-piece">
+                <img src="images/img1.jpg" alt="my third artwork" class="workplace_img">
+            </a>
+             <!--Project4-->
+             <a href="portfoliome" class="work-piece">
+                <img src="images/img1.jpg" alt="my fourth artwork" class="workplace_img">
+            </a>
+             <!--Project5-->
+             <a href="portfoliome" class="work-piece">
+                <img src="images/img1.jpg" alt="my fifth project" class="workplace_img">
+            </a>
         </div>
     </section>
 
         <footer>
-            <a href="mailto:fort.k@gmail.com" class="footer_link">fort.k@gmail</a>
+            <a href="bap.tiste@yahoo.com" class="footer_link">bap.tiste@yahoo.com</a>
             <ul class="social_links">
                 <li class="socialitem">
                     <a href="https://twitter.com" class="sociallinkitem">Twitter</a>
