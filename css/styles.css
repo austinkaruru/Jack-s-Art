@@ -80,7 +80,10 @@ section{
     color: blanchedalmond;
   text-decoration: none;
 }
-
+.btn{
+    background-color: black;
+    color:blanchedalmond;
+}
 .button:hover{
     transform: scale(1.1);
     color: white;
@@ -94,23 +97,33 @@ section{
 
 @media (min-width:700px){
     .bio{
-        display: grid;
-        grid-template-columns:  1fr 2000px;
-        grid-column-gap: 1em;
         grid-template-areas: 
       "title image"
       "subtitle image"
       "text image";
       
     }
+    .sectitle{
+        grid-area:title;
+    }
+    .bio_img{
+        grid-area:image;
+    }
+}
+.bio_body {
+    font-family: sans-serif;
+    font-size: 25px;
+
 }
 
 .myprojects {
     background-color: chocolate;
     text-align: center;
-    color: white;
+    color: blanchedalmond;
     background-image: url(../images/sculpture.jpg);
     background-blend-mode: multiply;
+    font-family: sans-serif;
+    font-size: 25px;
 }
 
 .mywork{
@@ -126,8 +139,8 @@ section{
     transform: scale(1.1);
 }
 .footer{
-    background-color: black;    
-    color: white;
+    background-color: chocolate;    
+    color: black;
     text-align: center;
     padding: 2.5em 0;
 
@@ -139,14 +152,8 @@ section{
 }
 
 .footer_link:hover{
-    text-decoration: underline;
+    color:blue;
 }
-
-.footer_link:hover, socialitemlink:hover{
-    opacity: 50%;
-  
-  }
-
 
 .social_links{
     list-style: none;
@@ -160,7 +167,13 @@ section{
     display: block;
     margin: 0 .8em;
 }
-
+.sociallinkitem{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.sociallinkitem:hover{
+    color: blue;
+}
 .VE{
     background-color: transparent;
 }
