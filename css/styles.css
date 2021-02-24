@@ -43,6 +43,12 @@ section{
 @media (min-width:900px){
     .topintro{
         padding: 25px;
+        grid-column-gap: 1em;
+        margin: 0 auto;
+        grid-template-areas: 
+     "img title"
+     "img subtitle";
+     grid-template-columns: min-content max-content;
 }
 
 .first_img{
@@ -63,7 +69,15 @@ section{
     font-family: sans-serif;
     font-size: 20px;
 }
-
+@media(min-width:1000px){
+    .skills{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .skill + .skill {
+        margin-left: 1em;
+    }
+}
 .topcreative{
     color: black;
     background-image: url(../images/backgroundart.jpg);
@@ -176,4 +190,5 @@ section{
 }
 .VE{
     background-color: transparent;
+}
 }
